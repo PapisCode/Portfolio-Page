@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            background-image: url(Joker.jpg);
+        }
+    </style>
+
+
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Gabriel Hernandez</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <button class="show-details">Show Details</button>
+        <p class="details" style="display: none;">Protige Student learning coding to one day end up in Cyber Security</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project">
+            <h3>Project 1</h3>
+            <button class="show-details">Show Details</button>
+            <p class="details" style="display: none;">Building a simple quiz webpage with questions about a chosen topic</p>
+        </div>
+        <div class="project">
+            <h3>Project 2</h3>
+            <button class="show-details">Show Details</button>
+            <p class="details" style="display: none;">Created a user registration form using HTML tags and accessibility principles discussed.</p>
+        </div>
+
+        <div class="project">
+            <h3>Project 3</h3>
+            <button class="show-details">Show Details</button>
+            <p class="details" style="display: none;">Apply knowledge of CSS to style a simple form, experiment with text formatting, the box model, and responsive layout using Flexbox</p>
+        </div>
+    </section>
+    
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <span class="error" id="nameError" style="color: red;"></span>
+
+            <aside>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone">
+                <span class="error" id="phoneError" style="color: red;"></span>
+            </aside>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <span class="error" id="emailError" style="color: red;"></span>
+    
+            <button type="submit">Submit</button>
+        </form>
+
+  
+    </section>
+    
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024, The Joker</p>
+    </footer>
+
+
+
+</html>

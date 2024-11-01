@@ -1,0 +1,98 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    line-height: 1.6;
+    color: gold;
+    body {
+        background-image: url(Joker.jpg);
+    }
+}
+
+header, footer {
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    padding:0px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+}
+
+nav ul {
+    list-style:circle;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration:solid;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+section {
+    padding: 45px;
+    margin: 50px;
+    background-color: transparent;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: limegreen;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+/* Media Queries for Mobile Devices */
+@media only screen and (max-width: 600px) {
+    header, footer {
+        padding: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    section {
+        padding: 10px;
+        margin: 10px;
+    }
+}
+
+html {
+    scroll-behavior:initial;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+}
+
+
+
+
