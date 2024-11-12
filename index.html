@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Page</title>
-    <link rel="stylesheet" href="https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbC1DLUZDaVRtYzVzMkNicG8xcTFMSm1FeTI5Z3xBQ3Jtc0trNm03czJ1N3Y3QmxzODFJQ0dYQUdoZTFLaU5rNVFrOVdTRTRDSnVkenZLQ0VNU3NsMG9GUDVkbDA1ZUN0X1VsU29LMEM3aW1JZ3owYlBKZDJqVXgyUWI2VDVINTFudlBrdW1KVzVQTUk4d1YybVRuYw&q=https%3A%2F%2Fcdnjs.cloudflare.com%2Fajax%2Flibs%2Ffont-awesome%2F6.5.2%2Fcss%2Fall.min.css&v=xtK57s6QN28">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
 <!-- navigation menu -->
     <nav>
         <div class="nav container">
-            <div class=""logo">
+            <div class="logo">
             <span>Gab</span>
         </div>
         <div class="links">
@@ -18,9 +18,49 @@
             <div class="link"><a href="#">About</a></div>
             <div class="link"><a href="#">Projects</a></div>
             <div class="link"><a href="#">Contact</a></div>
-
+        <div>
+       <i class="fa-solid fa-bars hamburg"onclick="hamburg()"></i>
+       <div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Projects</a>
+                <a href="#">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel"></i>
+            </div>
+        </div>
+       </div>
 
     </nav>
+    <section>
+        <div class="main-container">
+            <div class="image">
+                <img src="Joker.jpg" alt="">
+            </div>
+            <div class="content">
+                <h1 data-aos="fade-left">
+                    Hey I'm
+                    <span>Gabriel</span>
+                    <h1>
+                        <div class="typewriteer">
+                            I'm a
+                            <span class="typewriter-text"></span>
+                            <label for=""></label>
+                            <p>Learning the ways to code using HTML, style.css, and js. Expending further knowledge through course material, coding articles, and youtube. </p>
+                            <div class="social links">
+                                <a href="https://github.com/PapisCode">
+                                     <i class="fab fa-github"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+                    </h1>
+                </h1>
+            </div>
+        </div>
+    </section>
     
 </body>
 </html>
