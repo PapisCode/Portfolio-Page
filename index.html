@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
     <div id="header">
@@ -32,18 +33,18 @@
                 <h1 class="sub-title">About Me</h1>
                 <p>New student at Humber taking computer programming. Learning Kali Linux in hope to land in a cybersecurity department.</p>
                 <div class="tab-titles">
-                    <p class="tab-links active-link">Skills</p>
-                    <p class="tab-links">Experiences</p>
-                    <p class="tab-links">Education</p>
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
                 </div>
-                <div class="tab-contents active-tab">
+                <div class="tab-contents active-tab" id="skills">
                     <ul>
                         <li><span>VS Code</span><br> Coding language and execution using VS Code</li>
                         <li><span>Kali Linux</span><br>Forensics and Penetrating testing</li>
                         <li><span>Web Development</span><br>Web/App Development</li>
                     </ul>
                 </div>
-                <div class="tab-contents">
+                <div class="tab-contents" id="experience">
                     <ul>
                         <li><span>Sept 2024 - Current</span><br>Kali Linux</li>
                         <li><span>Sept 2024 - Current</span><br>VS Code</li>
@@ -51,7 +52,7 @@
                         <li><span>Sept 2024 - Current</span><br>DataModeler</li>
                     </ul>
                 </div>
-                <div class="tab-contents">
+                <div class="tab-contents" id="education">
                     <ul>
                         <li><span>Sept 2024 - Current</span><br>Humber College</li>
                         <li><span>Sept 2019 - June 2021</span><br>Algonquin College</li>
@@ -59,5 +60,49 @@
             </div>
         </div>
     </div>
+
+    <!--Services-->
+    <div id="Services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-desktop"></i>
+                    <h2>Web Design</h2>
+                    <p>I create modern and user-friendly websites using HTML, CSS, and JavaScript.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-lock"></i>
+                    <h2>Security</h2>
+                    <p>Digitial forensics and penetrating testing your network or database for additional security</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>App Development</h2>
+                    <p>I create modern and user-friendly apps using HTML, CSS, and JavaScript.</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
 </body>
 </html>
