@@ -248,3 +248,11 @@ flex-basis: 35%;
     color: #ff004f;
     transform: translateY(-5px);
 }
+
+.btn{
+    text-decoration: none;
+    color: #ff004f;
+    font-size: 20px;
+    margin-top: 20px;
+    display: inline-block;
+}
