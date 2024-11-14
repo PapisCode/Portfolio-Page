@@ -1,160 +1,57 @@
-<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content=
+"width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Potfolio</title>
 </head>
+
 <body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="header-text">
-                <p>Computer Programmer Student</p>
-                <h1>Hi, I'm <span>Gab</span><br>learning the ways to coding with different tools</h1>
-            </div>
-        </div>
-    </div>
-    /
-    <div id="About">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1"></div>
-                <h1 class="sub-title">About Me</h1>
-                <p>New student at Humber taking computer programming. Learning Kali Linux in hope to land in a cybersecurity department.</p>
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                    <p class="tab-links" onclick="opentab('education')">Education</p>
-                </div>
-                <div class="tab-contents active-tab" id="skills">
-                    <ul>
-                        <li><span>VS Code</span><br> Coding language and execution using VS Code</li>
-                        <li><span>Kali Linux</span><br>Forensics and Penetrating testing</li>
-                        <li><span>Web Development</span><br>Web/App Development</li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="experience">
-                    <ul>
-                        <li><span>Sept 2024 - Current</span><br>Kali Linux</li>
-                        <li><span>Sept 2024 - Current</span><br>VS Code</li>
-                        <li><span>Sept 2024 - Current</span><br>NetBeans</li>
-                        <li><span>Sept 2024 - Current</span><br>DataModeler</li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="education">
-                    <ul>
-                        <li><span>Sept 2024 - Current</span><br>Humber College</li>
-                        <li><span>Sept 2019 - June 2021</span><br>Algonquin College</li>
-                    </ul>
-            </div>
-        </div>
-    </div>
+	<div id="app">
+		<header>
+			<h1>
+				Portfolio
+			</h1>
+			<h1>
+				Portfolio Using HTML, CSS & JS
+			</h1>
+		</header>
+		<nav>
+			<ul>
+				<li>
+					<a href="#" onclick=
+					"changeContent('home')">
+						About
+					</a>
+				</li>
+				<li>
+					<a href="#" onclick=
+					"changeContent('about')">
+						Projects
+					</a>
+				</li>
+				<li>
+					<a href="#" onclick=
+					"changeContent('contact')">
+						Contact
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<main>
+			<div id="content">
 
-    <!--Services-->
-    <div id="Services">
-        <div class="container">
-            <h1 class="sub-title">My Services</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fas fa-desktop"></i>
-                    <h2>Web Design</h2>
-                    <p>I create modern and user-friendly websites using HTML, CSS, and JavaScript.</p>
-                    <a href="#">Learn more</a>
-                </div>
-                <div>
-                    <i class="fas fa-lock"></i>
-                    <h2>Security</h2>
-                    <p>Digitial forensics and penetrating testing your network or database for additional security</p>
-                    <a href="#">Learn more</a>
-                </div>
-                <div>
-                    <i class="fas fa-code"></i>
-                    <h2>App Development</h2>
-                    <p>I create modern and user-friendly apps using HTML, CSS, and JavaScript.</p>
-                    <a href="#">Learn more</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--Projects-->
-    <div id="Projects">
-        <div class="container">
-            <h1 class="sub-title">My Projects</h1>
-            <div class="work-list">
-                <div class="work">
-                    <div class="layer">
-                        <i class="fas fa-link"></i>
-                        <h3>Project 1</h3>
-                            <p>Build a simple quiz webpage with questions about yourself or a chosen topic.</p>
-                        </div>
-                        <div class="layer">
-                            <i class="fas fa-link"></i>
-                            <h3>Project 2</h3>
-                                <p>Create a user registration form using the HTML tags and accessibility principles discussed</p>
-                            </div>
-                            <div class="layer">
-                                <i class="fas fa-link"></i>
-                                <h3>Project 3</h3>
-                                    <p>Apply kknowledge of CSS to style a simple form, experiment formatting, the box model, and responsive layout using Flexbox.</p>
-                                </div>
- <!--Contact-->
- <div id="contact">
- <div class="container">
-    <div class="row">
-        <div class="contact-left">
-            <h1 class="sub-title">Contact Me</h1>
-            <p><i class="fas fa-paper-plane"></i>papiscode@outlook.com</p>
-            <p><i class="fas fa-phone-square-alt"></i>6131234567</p>
-            <div class="social-icons">
-                <a href="https://github.com/PapisCode">
-                    <i class="fab fa-github"></i>
-            </div>
-            <a href="Gabriel Hernandez (Resume).pdf" download class="btn btn2">Download CV</a>
-        </div>
-        <div class="contact-right">
-            <form>
-                <input type="text" name="name" placeholder="Your name" required>
-                <input type="email" name="email" placeholder="Your email" required>
-                <textarea name="message" placeholder="Your message" required></textarea>
-                <button type="Submit" class="btn btn2">Submit</button>
-            </form>
-        </div>
-    </div>
- </div>
-        </div>
-        <div class="copyright">
-            <p>
-        &copy; 2024, PapisCode. All rights reserved.
-            </p>
-        </div>
-    </div>
-
-    <script>
-
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-
-        function opentab(tabname){
-            for(tablink of tablinks){
-                tablink.classList.remove("active-link");
-            }
-            for(tabcontent of tabcontents){
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-    </script>
+				<img src="The Joker.jpg">
+				<h2>Welcome to my portfolio</h2>
+				<p>
+				In the following tabs you will learn what I am currently studying and the projects I've completed. Welcome, and thank you for visiting my portfolio
+				</p>
+			</div>
+		</main>
+	</div>
+	<script src="script.js"></script>
 </body>
+
 </html>
