@@ -39,7 +39,13 @@ function changeContent(page) {
 		case 'skills':
 			contentDiv.innerHTML = ` 
 			    <h2>Skills</h2>
-				
+				<ul>
+				<li>HTML, CSS, and JavaScript - Building your responsive and interactive web pages.</li>
+				<li> Git and GitHub - Collaborating with other coders using Git and uploading the changes to GitHub.</li>
+				<li> Oracle - Building ER diagrams using Oracle to facilitate programming ideas.</li>
+				<li>VS Code, NetBeans, and Linux - Integrated development environments (IDEs) for coding.</li>
+				<li> Basic Cybersecurity Tools - Gaining familiarity with Kali Linux utilities (Network Penetration and Testing tools).</li>
+				</ul>
 				<p>
 					Feel free to reach out!
 				</p> 
