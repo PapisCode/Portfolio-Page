@@ -183,3 +183,32 @@ form {
 	max-width: 90%;
 }
 }
+
+/* Footer Style */
+
+footer {
+    background-color: #1f1f1f;
+    color: #e0e0e0;
+    text-align: center;
+    padding: 10px 20px;
+    border-top: 2px solid #2a2a2a;
+    box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.5);
+	position: relative;
+	bottom: 0;
+	width: 100%;
+}
+
+footer a {
+	color: #ff6f61;
+    text-decoration: none;
+	margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
+
+footer p {
+	margin: 5px 0;
+}
