@@ -47,8 +47,18 @@ function changeContent(page) {
 				<li> Basic Cybersecurity Tools - Gaining familiarity with Kali Linux utilities (Network Penetration and Testing tools).</li>
 				</ul>
 				<p>
-					Feel free to reach out!
-				</p> 
+				I am constantly working one expanding my skills sets through hands-on projects and continuous learning.
+				</p>
+				<p>
+				<a href="#" onclick="changeContent('contact')">Contact me</a>
+				</p>
+				`;
+				break;
+
+				case 'contact':
+					contentDiv.innerHTML = `
+                <h2>Contact Me</h2>
+				<p> If you have any questions please feel free to contact me, I would love to hear from you.</p>
 				<form> 
 				<label for="name">Name:</label> 
 				<input type="text" id="name" name="name" 
@@ -68,4 +78,45 @@ function changeContent(page) {
 		default:
 			contentDiv.innerHTML = '<h2>Page not found!</h2>';
 	}
+}
+
+function toggleProjectDetails(projectNumber) {
+	const projectDetailsDiv = document.createElement('projectDetails');
+	let details = '';
+
+	switch (projectNumber) {
+		case 1:
+			details = `
+			<h3>Project 1: Simple Webpage</h3>
+			<p>
+			Built a simple webpage using HTML. Applied basic structures and elements such as headings, paragraphs, links, images, lists, and tables.
+			</p>
+			`
+			break;
+			
+        case 2:
+			details = `
+            <h3>Project 2: Name Storage</h3>
+            <p>
+            Created a webpage allowing users to input and save their names using the HTML Web Storage API. This project gave me more understanding of Local Storage features.
+			</p>
+			`
+            break;
+            
+        case 3:
+            details = `
+			<h3>Project 3: Blog Website</h3>
+			<p>
+			Developed a blog website featuring:
+			<ul>
+			    <li>A homepage displaying a list of blog posts.</li>
+				<li>A page to create new posts.</li>
+				<li>Editing or deleting existing posts.</li>
+				</ul>
+				Learned Git and GitHub with proper version control workflows.
+			</p>
+			`;
+			break;
+	}
+	projectDetailsDiv.innerHTML = details;
 }
