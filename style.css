@@ -6,6 +6,7 @@ body {
 	margin: 0;
 	padding: 0;
 	background-color: #e0e0e0;
+	color: #e0e0e0;
 }
 
 /*App container*/
@@ -18,15 +19,17 @@ body {
 /*Header style*/
 header {
 	background-color: #1f1f1f;
-	color: e0e0e0;
+	color: #e0e0e0;
 	text-align: center;
 	padding: 1em;
 	border-bottom: 2px solid #2a2a2a;
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5)
 }
 
 /*Navigation bar*/
 nav {
 	background-color: #333;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
 }
 
 nav ul {
@@ -46,12 +49,13 @@ nav a {
 	color: #e0e0e0;
 	padding: 1em;
 	display: block;
-	transition: background-color 0.3s ease;
+	transition: background-color 0.3s ease; box-shadow: (0, 0, 0, 0.5);
 }
 
 nav a:hover {
 	background-color: #555;
 	color: #ffffff;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 main {
@@ -64,34 +68,74 @@ main {
 	margin: 0 auto;
 	background-color: #1e1e1e;
 	padding: 20px;
-	border-radius: 8px;
-	box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+	border-radius: 12px;
+	box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.8), -10px -10px 30px rgba(50, 50, 50, 0.4);
+	transition: transform 0.3s ease;
+}
+
+#content:hover {
+    transform: scale(1.02);
 }
 
 #content h2 {
 	color: #ff6f61;
-  text-align: center;
-  
+  	text-align: center;
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); 
 }
 
+/* Image*/
 #content img {
 	width: 400px;
 	height: auto;
 	margin: 0 auto;
 	display: block;
 	border-radius: 10px;
-	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
 	border: 3px solid #ff6f61;
 }
 
-/* Form Stylres */
+/* Cards & Buttons */
+.card {
+	background-color: #2a2a2a;
+	border-radius: 12px;
+	padding: 20px;
+	margin: 20px 0;
+	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.8), -10px -10px 20px rgba(50, 50, 50, 0.4);
+	transition: transform 0.3s ease; box-shadow: 0.3 ease;
+}
+
+.card:hover {
+	transform: translateY(-5px);
+	box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.8), -15px -15px 30px rgba(50, 50, 50, 0.4);
+}
+
+.button {
+	background-color: #555;
+	color: white;
+	padding: 10px 20px;
+	border-radius: 6px;
+	border: none;
+	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+	transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: #ff6f61;
+	transform: translateY(-5px);
+	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.8);
+}
+
+/* Form Styles */
 form {
 	max-width: 400px;
 	margin: 20px auto;
 	padding: 20px;
 	background-color: #2a2a2a;
 	border-radius: 8px;
-	box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.8), -10px -10px 20px rgba(50, 50, 50, 0.4);
 }
 
 form label {
@@ -110,11 +154,7 @@ form textarea {
 	border-radius: 4px;
 	background-color: #1f1f1f;
 	color: #e0e0e0;
-}
-
-form input::placeholder
-form textarea::placeholder {
-	color: #888;
+	box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.8), inset -3px -3px 6px rgba(50, 50, 50, 0.4);
 }
 
 form button {
@@ -122,16 +162,24 @@ form button {
 	color: #ffffff;
 	padding: 10px;
 	border: none;
-	border-radius: 4px;
+	border-radius: 6px;
 	cursor: pointer;
-	transition: background-color 0.3s ease, color 0.3s ease;
+	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5), -5px -5px 15px rgba(50, 50, 50, 0.2);
+	transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 form button:hover {
 	background-color: #ff6f61;
-	color: #ffffff;
+	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.8);
 }
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+	#content img {
+		width: 100%;
+	}
 
 form {
 	max-width: 90%;
+}
 }
