@@ -4,17 +4,21 @@ function changeContent(page) {
 	switch (page) {
 		case 'home':
             contentDiv.innerHTML = `
-    
+			    <h1>Welcome to my Portfolio</h1>
 				<p>
-					Learning the ways to coding using tools like: <br />
-                    - VS Code <br />
-                    - NetBeans <br />
-                    - Linux <br />
-                    - Kali Linux
+					Learning the ways to coding using tools like:
+					<ul>
+                    <li><strong>VS Code</strong></li>
+					<li><strong>NetBeans</strong></li>
+					<li><strong>Linux</strong></li>
+					<li><strong>Kali Linux</strong></li>
+					<ul>
 				</p>
-
-                <p> Only starting coding a few months ago, very challenging subject to learn, I am reading and watching a ton of video's on different ways to build projects such as apps and website's. I would say it is a challenging program but I do think I'm slowly getting the hang of it. Once the program is completed, I would like to get into CyberSecurity.
-
+                <p> I decided to make a career change in August 2024 in the coding/cybersecurity world in August 2024. I am learning most of my skills through hands-on project via the Computer Programming Course at Humber College, YoutTube videos, and tutorials.
+				<p>
+				<p>
+				<a href="#" onclick="changeContent('about')">Learn more about my Projects</a>
+				<p>
 			`;
 			break;
 		case 'about':
