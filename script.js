@@ -17,25 +17,24 @@ function changeContent(page) {
 				</p>
                 <p> I decided to make a career change in August 2024 in the coding/cybersecurity world. I am learning most of my skills through hands-on project via the Computer Programming Course at Humber College, YoutTube videos, and tutorials.
 				<p>
-				<p>
 				<a href="#" onclick="changeContent('about')">Learn more about my Projects</a>
-				<p>
+				</p>
 			`;
 			break;
 		case 'about':
 			contentDiv.innerHTML = `
 				<h2>About My Projects</h2>
 				<ul>
-				<li><a href="#" on click="toggleProjectDetails(1)">Project 1: Simple Webpage</a></li>
-				<li><a href="#" on click="toggleProjectDetails(2)">Project 2: Name Storage App</a></li>
-				<li><a href="#" on click="toggleProjectDetails(3)">Project 3: Blog Website</a></li>
+				<li><a href="#" onclick="toggleProjectDetails(1)">Project 1: Simple Webpage</a></li>
+				<li><a href="#" onclick="toggleProjectDetails(2)">Project 2: Name Storage App</a></li>
+				<li><a href="#" onclick="toggleProjectDetails(3)">Project 3: Blog Website</a></li>
 				</ul>
 				<div id="projectDetails" class="details-card"></div>
 				<p>
 				<a href="#" class="button" onclick="changeContent('skills')">Check out my skills</a>
 				</p>
-				</div>
 			`;
+			break;
 			case 'resume':
 				contentDiv.innerHTML = `
 				<div class="card">
