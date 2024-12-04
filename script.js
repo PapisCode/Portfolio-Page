@@ -26,19 +26,21 @@ function changeContent(page) {
 			contentDiv.innerHTML = `
 				<h2>About My Projects</h2>
 				<ul>
-				<li><a href="#" on click="toggleProjectDetails(1)">Project 1: Created a simple webpage using HTML. Applied the basic HTML structure, use essential HTML tags, and include various elements such as headings, paragraphs, links, images, lists, and tables.</a></li>
-				<li><a href="#" on click="toggleProjectDetails(2)">Project 2: Created a simple web page that allows users to input their name, save it locally using the HTML5 Web Storage API, and retrieve it whenever they visit the page. Interacted with the Local Storage feature in HTML5.</a></li>
-				<li><a href="#" on click="toggleProjectDetails(3)">Project 3: Created a blog website with a homepage that displays a list of blog posts, a page to create new posts, and the ability to edit or delete existing posts. Learned Git and GitHub with proper version control workflows.</a></li>
+				<li><a href="#" on click="toggleProjectDetails(1)">Project 1: Simple Webpage</a></li>
+				<li><a href="#" on click="toggleProjectDetails(2)">Project 2: Name Storage App</a></li>
+				<li><a href="#" on click="toggleProjectDetails(3)">Project 3: Blog Website</a></li>
 				</ul>
-				<div id="ProjectDetails"></div>
+				<div id="projectDetails" class="details-card"></div>
 				<p>
-				<a href="#" onclick="changeContent('skills')">Check out my skills</a>
+				<a href="#" class="button" onclick="changeContent('skills')">Check out my skills</a>
 				</p>
+				</div>
 			`;
 			break;
 		case 'skills':
-			contentDiv.innerHTML = ` 
-			    <h2>Skills</h2>
+			contentDiv.innerHTML = `
+			<div class="card">
+			    <h2 class="title">Skills</h2>
 				<ul>
 				<li>HTML, CSS, and JavaScript - Building your responsive and interactive web pages.</li>
 				<li> Git and GitHub - Collaborating with other coders using Git and uploading the changes to GitHub.</li>
@@ -50,14 +52,15 @@ function changeContent(page) {
 				I am constantly working one expanding my skills sets through hands-on projects and continuous learning.
 				</p>
 				<p>
-				<a href="#" onclick="changeContent('contact')">Contact me</a>
+				<a href="#" class="button" onclick="changeContent('contact')">Contact me</a>
 				</p>
+				</div>
 				`;
 				break;
-
-				case 'contact':
+			case 'contact':
 					contentDiv.innerHTML = `
-                <h2>Contact Me</h2>
+				<div class="card">
+                <h2 class="title">Contact Me</h2>
 				<p> If you have any questions please feel free to contact me, I would love to hear from you.</p>
 				<form> 
 				<label for="name">Name:</label> 
@@ -81,40 +84,32 @@ function changeContent(page) {
 }
 
 function toggleProjectDetails(projectNumber) {
-	const projectDetailsDiv = document.createElement('projectDetails');
+	const projectDetailsDiv = document.getElementById('projectDetails');
 	let details = '';
 
 	switch (projectNumber) {
 		case 1:
 			details = `
+			<div class="details">
 			<h3>Project 1: Simple Webpage</h3>
-			<p>
-			Built a simple webpage using HTML. Applied basic structures and elements such as headings, paragraphs, links, images, lists, and tables.
-			</p>
-			`
+			<p>Built a simple webpage using HTML. Applied basic structures and elements such as headings, paragraphs, links, images, lists, and tables.</p>
+			</div>
+			`;
 			break;
-			
         case 2:
 			details = `
+			<div class="details">
             <h3>Project 2: Name Storage</h3>
-            <p>
-            Created a webpage allowing users to input and save their names using the HTML Web Storage API. This project gave me more understanding of Local Storage features.
-			</p>
-			`
-            break;
-            
+            <p>Created a webpage allowing users to input and save their names using the HTML Web Storage API. This project gave me more understanding of Local Storage features.</p>
+			</div>
+			`;
+            break; 
         case 3:
             details = `
+			<div class="details">
 			<h3>Project 3: Blog Website</h3>
-			<p>
-			Developed a blog website featuring:
-			<ul>
-			    <li>A homepage displaying a list of blog posts.</li>
-				<li>A page to create new posts.</li>
-				<li>Editing or deleting existing posts.</li>
-				</ul>
-				Learned Git and GitHub with proper version control workflows.
-			</p>
+			<p>Developed a blog website featuring a homepage, post creation, and editing functionality using Git and GitHub workflows.</p>
+			</div>
 			`;
 			break;
 	}
