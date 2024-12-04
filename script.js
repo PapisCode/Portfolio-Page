@@ -36,6 +36,15 @@ function changeContent(page) {
 				</p>
 				</div>
 			`;
+			case 'resume':
+				contentDiv.innerHTML = `
+				<div class="card">
+				<h2 class="title">Resume</h2>
+				<p>You can view or download my resume below:</p>
+				<a href="Gabriel_Hernandez_Resume.pdf" target="_blank" class="button">View Resume</a>
+				<a href="Gabriel_Hernandez_Resume.pdf" download class="button">Download Resume</a>
+				</div>
+				`;
 			break;
 		case 'skills':
 			contentDiv.innerHTML = `
