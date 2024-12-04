@@ -15,7 +15,7 @@ function changeContent(page) {
 					<li><strong>Oracle</strong></li>
 					<ul>
 				</p>
-                <p> I decided to make a career change in August 2024 in the coding/cybersecurity world in August 2024. I am learning most of my skills through hands-on project via the Computer Programming Course at Humber College, YoutTube videos, and tutorials.
+                <p> I decided to make a career change in August 2024 in the coding/cybersecurity world. I am learning most of my skills through hands-on project via the Computer Programming Course at Humber College, YoutTube videos, and tutorials.
 				<p>
 				<p>
 				<a href="#" onclick="changeContent('about')">Learn more about my Projects</a>
