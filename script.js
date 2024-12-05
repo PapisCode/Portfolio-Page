@@ -28,6 +28,8 @@ function changeContent(page) {
 				<li><a href="#" onclick="toggleProjectDetails(1)">Project 1: Simple Webpage</a></li>
 				<li><a href="#" onclick="toggleProjectDetails(2)">Project 2: Name Storage App</a></li>
 				<li><a href="#" onclick="toggleProjectDetails(3)">Project 3: Blog Website</a></li>
+				<li><a href="#" onclick="toggleProjectDetails(4)">Project 4: Paint Job Estimator</a></li>
+				<li><a href="#" onclick="toggleProjectDetails(5)">Project 5: Kali Linux</a></li>
 				</ul>
 				<div id="projectDetails" class="details-card"></div>
 				<p>
@@ -120,6 +122,25 @@ function toggleProjectDetails(projectNumber) {
 			</div>
 			`;
 			break;
+		case 4:
+				details = `
+				<div class="details">
+				<h3>Project 4: Paint Job Estimator</h3>
+				<p>Created a program which calculates the height and width of room walls in feet or inches</p>
+				<p>The program also calculates the height and width of doors and windows in feet or inches.</p>
+				<p>The program calculates the number of walls, doors and windows</p>
+				<p>Calculates the price of the pain per gallon</p>
+				</div>
+				`;
+				break;
+			case 5:
+					details = `
+					<div class="details">
+					<h3>Project 5: Kali Linux</h3>
+					<p>Learning basic tool function to penetrate and test networks</p>
+					</div>
+					`;
+					break;
 	}
 	projectDetailsDiv.innerHTML = details;
 }
